@@ -10,22 +10,34 @@
  * different template.
  */
 
-get_header(); ?>
-<div id="page">
-	<?php 
-		// Вставка хлебных крошек
-		// if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(); 
-	?>
-	<div id="content" class="site-content">
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+get_header();
+$container = get_theme_mod( 'understrap_container_type' );
+?>
+
+<div class="wrapper" id="single-wrapper">
+
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+
+		<div class="row">
+
+			<!-- Do the left sidebar check -->
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+
+			<main class="site-main" id="main">
 				<?php 
 					the_post(); 
 					get_template_part( 'content', 'product' );
 				?>
 
 			</main><!-- #main -->
-		</div><!-- #primary -->
+
+			<!-- Do the right sidebar check -->
+			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+
+		</div><!-- .row -->
+
 	</div><!-- #content -->
-</div><!-- #page -->
+
+</div><!-- #single-wrapper -->
+
 <?php get_footer(); ?>

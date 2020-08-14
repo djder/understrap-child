@@ -56,7 +56,52 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
-				); ?>
+				); 
+
+				//Additional user menu
+				if( is_user_logged_in() ){ ?>
+					<div id="navbarNavDropdown" class="collapse navbar-collapse">
+						<ul id="user-menu" class="navbar-nav ml-auto">
+							<li id="user-name-item" class="menu-item menu-item-has-children dropdown nav-item">
+								<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<?php $current_user = wp_get_current_user();
+									echo get_avatar( $current_user->user_email, 20, '', 'User avatar', array('class'=>'user-avatar') ); 
+
+									echo $current_user->display_name; ?>
+								</a>
+
+					<?php wp_nav_menu(
+						array(
+							'theme_location'  => 'user',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'navbarNavDropdown',
+							'container'    	  => false,
+							'menu_class'      => 'dropdown-menu',
+							'fallback_cb'     => '',
+							'menu_id'         => 'user_unregistered-menu',
+							'depth'           => 1,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);	?> 
+							</li>
+						</ul>
+					</div>
+				<?php }
+				else {
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'user-unregistered',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav ml-auto',
+							'fallback_cb'     => '',
+							'menu_id'         => 'user_unregistered-menu',
+							'depth'           => 1,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+				} 
+				?>
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

@@ -27,7 +27,20 @@ function theme_enqueue_styles() {
     }
 }
 
+add_action( 'after_setup_theme', 'understrap_setup' );
+function understrap_setup() {
+
+    add_child_theme_textdomain();
+
+    //Register addiditonal menus
+    register_nav_menus( 
+        array(
+        'user'  => __( 'User Menu', 'understrap' ),
+        'user-unregistered'  => __( 'Unregistered User Menu', 'understrap' )
+        ) 
+    );
+}
+
 function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
-add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
