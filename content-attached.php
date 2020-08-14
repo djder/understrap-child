@@ -8,18 +8,18 @@ $options = array(
 
 $post_id = get_the_ID(); ?>
 
-<table>
+<table class="table">
 	<thead>
 		<tr>
-			<td>Документ</td>
-			<td>Номер</td>
-			<td>Действителен до</td>			
-			<td>Обновлен</td>
-			<td>Скачать</td>
-			<td>Перейти</td>
+			<th  scope="col">Документ</td>
+			<th  scope="col">Номер</td>
+<!--			<th  scope="col">Действителен до</td>		-->	
+			<th  scope="col">Обновлен</td>
+			<th  scope="col">Скачать</td>
+			<th  scope="col">Перейти</td>
 		</tr>	
-		
 	</thead>
+	<tbody>
 <?php
 // Получение списка категорий для группировки по пиу документа
 $group_terms = get_terms( 'attachment_type' );
@@ -47,8 +47,8 @@ foreach ( $group_terms as $group_term ) {
 
     // вывод категории 
     if ( $attachments->have_posts() ) : ?>
-		<tr class="subheader-row">
-			<td colspan="6">
+		<tr scope="row" class="subheader-row">
+			<td colspan="5">
 		   		<h4 class="category-group"><?php echo $group_term->name?></h4>
 			</td>
 	   	</tr>	
@@ -64,9 +64,9 @@ foreach ( $group_terms as $group_term ) {
 				<td>
 					<?php echo CFS()->get( 'attachment_no', $att_id ) /*Номер документа*/?>
 				</td>
-				<td>
+<!--			<td>
 					<?php echo CFS()->get( 'due_date', $att_id ) /*Действителен до*/?>
-				</td>
+				</td>   -->
 				<td>
 					<?php echo get_the_modified_date( '', $att_id )  /*Обновлен*/?>
 				</td>
