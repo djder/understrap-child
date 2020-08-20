@@ -73,8 +73,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php wp_nav_menu(
 						array(
 							'theme_location'  => 'user',
-							'container_class' => 'collapse navbar-collapse',
-							'container_id'    => 'navbarNavDropdown',
 							'container'    	  => false,
 							'menu_class'      => 'dropdown-menu dropdown-menu-md-right',
 							'fallback_cb'     => '',

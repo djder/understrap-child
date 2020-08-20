@@ -22,7 +22,9 @@ $post_id = get_the_ID(); ?>
 	<tbody>
 <?php
 // Получение списка категорий для группировки по пиу документа
-$group_terms = get_terms( 'attachment_type' );
+$group_terms = get_terms( 'attachment_type',
+	array('parent' => 0) 
+);
 // Цикл по списку категорий для группировки
 foreach ( $group_terms as $group_term ) {
     $attachments = new WP_Query( array(
@@ -43,7 +45,7 @@ foreach ( $group_terms as $group_term ) {
 				'compare' => 'LIKE'
 			)
 		)
-    ) ); 
+    ) );
 
     // вывод категории 
     if ( $attachments->have_posts() ) : ?>
@@ -56,7 +58,17 @@ foreach ( $group_terms as $group_term ) {
 	    // Вывод списка вложений в категории
     	while ( $attachments->have_posts() ) : $attachments->the_post();
 		$att_id = get_the_ID();
-		$att_url = wp_get_attachment_url ( $att_id ) ?>
+		$att_url = wp_get_attachment_url( $att_id );
+		$att_path = get_attached_file( $att_id );
+		if ( file_exists ( $att_path ) ) {
+			$att_filetype = strtoupper(wp_check_filetype( $att_url )['ext']);
+			$att_filesize = ntz_products()->get_human_readable_filesize( $att_path );
+			$att_str = sprintf( "%s (%s)", $att_filetype, $att_filesize );
+			}
+		else {
+			$att_str = sprintf( "Файл %s не найден", $att_url );
+			}	
+		?>
 			<tr>
 				<td>
 					<?php the_attachment_link( $att_id ) /*Название документа*/?>
@@ -71,8 +83,7 @@ foreach ( $group_terms as $group_term ) {
 					<?php echo get_the_modified_date( '', $att_id )  /*Обновлен*/?>
 				</td>
 				<td>
-					<a href="<?php echo $att_url ?>">
-						<?php printf("%s (%s)", strtoupper(wp_check_filetype( $att_url )['ext']), MTLI()->get_filesize( $att_url ) ) /**/?>
+					<a href="<?php echo $att_url ?>"><?php echo $att_str /**/?>
 					</a>
 				</td>
 				<td>

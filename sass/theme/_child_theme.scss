@@ -1,0 +1,39 @@
+// Menus in widgets
+@mixin widget-menu {
+	list-style: none;
+	padding-left: 0;
+
+}
+$footer-text: gray("600");
+$footer-header: gray("700");
+$footer-link: $footer-header;
+
+.widget {
+	.menu, ul {
+	@include widget-menu;
+	}
+}
+
+.footer-widget {
+	* {
+		color: $footer-text;
+	}
+
+	a {
+		color: $footer-link;
+	}
+
+	h3, .h3 { 
+		color: $footer-header;
+		@include font-size($h5-font-size); 
+	}
+
+	.menu {
+		@include widget-menu;
+	}
+}
+
+// Avatar
+.avatar {
+	margin: 0 0.2em;
+}

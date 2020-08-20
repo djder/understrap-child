@@ -19,7 +19,7 @@ function theme_enqueue_styles() {
 
 	// Get the theme data
 	$the_theme = wp_get_theme();
-    wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
+    wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -27,8 +27,8 @@ function theme_enqueue_styles() {
     }
 }
 
-add_action( 'after_setup_theme', 'understrap_setup' );
-function understrap_setup() {
+add_action( 'after_setup_theme', 'understrap_child_setup' );
+function understrap_child_setup() {
 
     add_child_theme_textdomain();
 
@@ -39,8 +39,32 @@ function understrap_setup() {
         'user-unregistered'  => __( 'Unregistered User Menu', 'understrap' )
         ) 
     );
+
 }
 
 function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
+}
+
+// Customize search form
+add_filter( 'get_search_form', 'custom_search_form', 100 );
+function custom_search_form( $form ) {
+    $form = get_template_part( 'global-templates/search-form' );
+
+    return $form;
+}
+
+add_filter( 'widget_title', 'remove_widget_title', 10, 3 );
+function remove_widget_title( $title, $instance, $id_base ) {
+    if ( 'custom-post-type-search' == $id_base || 'search' == $id_base ) {
+        $title = "";
+    }
+
+    return $title;
+}
+
+remove_all_filters( 'get_the_excerpt' );
+add_filter( 'get_the_excerpt', 'change_excerpt_more', 10, 1 );
+function change_excerpt_more($more) {
+	return $more .= '...';
 }
