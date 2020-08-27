@@ -5,72 +5,58 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
-
-<div class="entry-content">
+	<div class="entry-content">
 		<!-- main desc -->
-	<div class="production">
-			
-		<div class="product-main" style="clear: both;">
+		<div class="row">
+				
 			<?php 
 			$mainimage = get_field('main_image');
 
 			if( $mainimage ): ?>
-
-	
+				
+			<div class="col-md-4">
+				<img src="<?php echo $mainimage['sizes']['medium']; ?>" alt="<?php echo $mainimage['alt']; ?>"/>
 			</div>
-				<div class="product-main-image" style="width: 300px; float: left;">
-					<img src="<?php echo $mainimage['sizes']['medium']; ?>" alt="<?php echo $mainimage['alt']; ?>"/>
-				</div><!-- .product-main-image -->
 
 			<?php endif; ?>
 
-			<div class="product-desc">
+			<div class="col-md-8">
+				<header class="entry-header">
+					<h1 class="entry-title"><?php the_title() ?></h1>
+				</header><!-- .entry-header -->
+				<p class="lead">
+					<?php the_terms( get_the_ID(), 'type', 'Вид: '); ?>
+				</p>		
 				<?php the_field('desc'); ?>			
-			</div><!-- .product-desc -->
-		   
-		<div  class="buttonpro" style="padding-bottom: 100px; ">
-			<a href="https://ntz-volhov.r-host.ru/?page_id=2030"p><button id="myActionButton">Подобрать по параметрам</button></a>
-		</div>
-
-	<ul class="nav nav-tabs" id="product-tab" role="tablist">
-		<li class="nav-item" role="presentation">
-			<a class="nav-link" id="params-tab" href="#params" role="tab" aria-controls="params" aria-selected="false">Параметры</a>
-		</li>
-		<li class="nav-item" role="presentation">
-			<a class="nav-link active" id="docs-tab" href="#docs" role="tab" aria-controls="docs" aria-selected="true">Документы</a>
-		</li>
-		<li class="nav-item" role="presentation">
-			<a class="nav-link" id="faq-tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false">Вопросы и ответы</a>
-		</li>
-	</ul>
-	<div class="tab-content" id="product-tab-content">
-		<div class="tab-pane fade" id="params" role="tabpanel" aria-labelledby="params-tab">
-			<?php the_field('chars'); ?>
-		</div>
-		<div class="tab-pane fade show active" id="docs" role="tabpanel" aria-labelledby="docs-tab">
-			<?php get_template_part( 'content', 'attached' ); ?>
-		</div>
-		<div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
-			<?php the_field('certs'); ?>
-		</div>
-	</div>
-</div>
-<!--
- 		<div class="product-tabs-body">
-			<section id="chars" class="product-tab">
-				<?php the_field('chars'); ?>
-			</section>	
-			<section id="docs" class="product-tab tab-hidden">
-				<?php the_field('docs'); ?>
-			</section>	
-			<section id="certs" class="product-tab tab-hidden">
-				<?php the_field('certs'); ?>
-			</section>	
-		</div> --> <!-- .product-tabs-body -->
-
+				<a class="btn btn-primary" href="https://ntz-volhov.r-host.ru/?page_id=2030" role="button">Подобрать по параметрам</a>
+			</div>
+		</div><!-- .row -->
+		<!-- tabs -->
+		<p>
+			<ul class="nav nav-tabs flex-column flex-sm-row" id="product-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="nav-link active" id="params-tab" data-toggle="tab" href="#params" role="tab" aria-controls="params" aria-selected="true">Технические характеристики</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="docs-tab" data-toggle="tab" href="#docs" role="tab" aria-controls="docs" aria-selected="false">Загрузки</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="faq-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false">Особенности</a>
+				</li>
+			</ul>
+			<!-- tab content -->
+			<div class="tab-content" id="product-tab-content">
+				<div class="tab-pane active" id="params" role="tabpanel" aria-labelledby="params-tab">
+					<p><?php the_field('chars'); ?></p>
+				</div>
+				<div class="tab-pane" id="docs" role="tabpanel" aria-labelledby="docs-tab">
+					<p><?php get_template_part( 'content', 'attached' ); ?></p>
+				</div>
+				<div class="tab-pane" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+					<p><?php the_field('certs'); ?></p>
+				</div>
+			</div>
+		</p>
 
 		<?php the_content(); ?>
 		<?php

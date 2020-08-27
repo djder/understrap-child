@@ -4,15 +4,17 @@
 	padding-left: 0;
 
 }
-$footer-text: gray("600");
-$footer-header: gray("700");
-$footer-link: $footer-header;
 
-.widget {
+.widget, .footer-widget {
 	.menu, ul {
 	@include widget-menu;
 	}
 }
+
+// Footer text colors
+$footer-text: gray("600");
+$footer-header: gray("700");
+$footer-link: $footer-header;
 
 .footer-widget {
 	* {
@@ -27,13 +29,88 @@ $footer-link: $footer-header;
 		color: $footer-header;
 		@include font-size($h5-font-size); 
 	}
-
-	.menu {
-		@include widget-menu;
-	}
 }
 
 // Avatar
 .avatar {
 	margin: 0 0.2em;
+}
+
+.attachment-icon {
+	max-width: 24px; 
+}
+
+.nav > .page_item > a {
+	@extend .nav-link;
+}
+
+.nav-pills {
+  > .page_item > a {
+    @include border-radius($nav-pills-border-radius);
+  }
+
+  > .current_page_item > a {
+    color: $nav-pills-link-active-color;
+    background-color: $nav-pills-link-active-bg;
+  }
+}
+
+article {
+  counter-reset: footnotes;
+  /* создать счётчик */
+}
+
+
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub { 
+  top: 0.4em; 
+}
+
+
+[id^="ref"] {
+  counter-increment: footnotes;
+  text-decoration-style: dotted !important;
+}
+
+[id^="ref"]:after {
+  -webkit-font-feature-settings: "sups";
+  -moz-webkit-font-feature-settings: "sups";
+  font-feature-settings: "sups";
+
+  content: '*' counter(footnotes);
+
+  /* показать цифру на счётчике в скобках */
+}
+
+[id^="mark"]:target {
+  /* изменить фон элемента при переходе к id */
+  @extend .text-info;
+}
+
+ol.footnote {
+  /* создать счётчик */
+  counter-reset: item;
+  @extend .blockquote-footer;
+
+  li {
+	counter-increment: item;
+    white-space: pre-wrap;
+
+	&::marker {
+	  content: '*' counter(item) '. ';
+	}
+  }
+}
+
+table {
+   @extend .table;
+
+   thead td {
+   	 @extend th;
+   }
 }
