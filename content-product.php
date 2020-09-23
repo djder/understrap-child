@@ -9,13 +9,10 @@
 		<!-- main desc -->
 		<div class="row">
 				
-			<?php 
-			$mainimage = get_field('main_image');
-
-			if( $mainimage ): ?>
+			<?php if ( has_post_thumbnail() ): ?>
 				
 			<div class="col-md-4">
-				<img src="<?php echo $mainimage['sizes']['medium']; ?>" alt="<?php echo $mainimage['alt']; ?>"/>
+				<?php echo get_the_post_thumbnail() ?>
 			</div>
 
 			<?php endif; ?>
@@ -27,7 +24,7 @@
 				<p class="lead">
 					<?php the_terms( get_the_ID(), 'type', 'Вид: '); ?>
 				</p>		
-				<?php the_field('desc'); ?>			
+				<?php the_content(); ?>			
 				<a class="btn btn-primary" href="https://ntz-volhov.r-host.ru/?page_id=2030" role="button">Подобрать по параметрам</a>
 			</div>
 		</div><!-- .row -->
@@ -58,7 +55,7 @@
 			</div>
 		</p>
 
-		<?php the_content(); ?>
+		
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'semicolon' ),

@@ -107,3 +107,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+
+	<?php if ( function_exists('yoast_breadcrumb') && !is_front_page() ) { ?>
+
+	<nav class="container text-muted">	
+
+		<small><?php yoast_breadcrumb() ?></small>
+
+	</nav>
+
+	<?php } ?>

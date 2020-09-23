@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			else :
 
-				get_template_part( 'content', 'none' );
+				get_template_part( 'loop-templates/content', 'none' );
 
 			endif; ?>
 
@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php understrap_pagination(); ?>
 
 			<!-- Do the right sidebar check -->
-			<?php //get_template_part( 'global-templates/right-sidebar-check' ); ?>
+			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 		</div><!-- .row -->
 

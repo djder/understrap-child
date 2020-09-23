@@ -34,6 +34,7 @@ $footer-link: $footer-header;
 // Avatar
 .avatar {
 	margin: 0 0.2em;
+	border-radius: 50%;
 }
 
 .attachment-icon {
@@ -45,72 +46,88 @@ $footer-link: $footer-header;
 }
 
 .nav-pills {
-  > .page_item > a {
-    @include border-radius($nav-pills-border-radius);
-  }
+	> .page_item > a {
+		@include border-radius($nav-pills-border-radius);
+	}
 
-  > .current_page_item > a {
-    color: $nav-pills-link-active-color;
-    background-color: $nav-pills-link-active-bg;
-  }
+	> .current_page_item > a {
+		color: $nav-pills-link-active-color;
+		background-color: $nav-pills-link-active-bg;
+	}
 }
 
 article {
-  counter-reset: footnotes;
-  /* создать счётчик */
+	counter-reset: footnotes;
+	/* создать счётчик */
 }
-
-
-
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
-}
-sub { 
-  top: 0.4em; 
-}
-
 
 [id^="ref"] {
-  counter-increment: footnotes;
-  text-decoration-style: dotted !important;
+	counter-increment: footnotes;
+	text-decoration-style: dotted !important;
 }
 
 [id^="ref"]:after {
-  -webkit-font-feature-settings: "sups";
-  -moz-webkit-font-feature-settings: "sups";
-  font-feature-settings: "sups";
+	-webkit-font-feature-settings: "sups";
+	-moz-webkit-font-feature-settings: "sups";
+	font-feature-settings: "sups";
 
-  content: '*' counter(footnotes);
-
-  /* показать цифру на счётчике в скобках */
+	content: '*' counter(footnotes);
+	/* показать цифру на счётчике в скобках */
 }
 
 [id^="mark"]:target {
-  /* изменить фон элемента при переходе к id */
-  @extend .text-info;
+	/* изменить фон элемента при переходе к id */
+	@extend .text-info;
 }
 
 ol.footnote {
-  /* создать счётчик */
-  counter-reset: item;
-  @extend .blockquote-footer;
+	/* создать счётчик */
+	counter-reset: item;
+	@extend .blockquote-footer;
 
-  li {
+	li {
 	counter-increment: item;
-    white-space: pre-wrap;
+		white-space: pre-wrap;
 
-	&::marker {
-	  content: '*' counter(item) '. ';
+		&::marker {
+			content: '*' counter(item) '. ';
+		}
 	}
-  }
 }
 
+//Apply bootstrap styles to simple tebles
+//
+//
 table {
-   @extend .table;
+	@extend .table;
 
-   thead td {
-   	 @extend th;
-   }
+	thead td {
+		@extend th;
+	}
+}
+
+//Make footer stick to bottom
+//
+//
+html, body {
+	@extend .h-100;
+}
+
+.site {
+	@extend .d-flex, .flex-column, .h-100;
+}
+
+#wrapper-footer-full {
+	@extend .mt-auto;
+}
+
+//Apply bootstrap styles to yoast breadcrumbs
+//
+//
+#breadcrumbs > span {
+	@extend .breadcrumb;
+}
+
+#wrapper-navbar {
+	@extend .border-bottom;
 }

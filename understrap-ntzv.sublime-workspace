@@ -1,0 +1,835 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"ife\tif … else"
+			],
+			[
+				"text",
+				"text-muted"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"Co",
+				"color\tproperty"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "conf/js/harakter.js",
+			"settings":
+			{
+				"buffer_size": 3813,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "conf/tol.php",
+			"settings":
+			{
+				"buffer_size": 7685,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "conf/js/tol.js",
+			"settings":
+			{
+				"buffer_size": 61968,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "conf/harakter.php",
+			"settings":
+			{
+				"buffer_size": 2971,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "conf/res2sel.php",
+			"settings":
+			{
+				"buffer_size": 4495,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 137.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/intzv/wp-config.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/harakter.php",
+		"/C/wamp64/www/intzv/wp-includes/template.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/res2sel.php",
+		"/C/wamp64/www/intzv/wp-includes/template-loader.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/single.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/dbconfig.php",
+		"/C/wamp64/www/intzv/wp-includes/class-wp-fatal-error-handler.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/page-podbor.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/js/podbor.js",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/js/harakter.js",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/page-2030.php",
+		"/C/wamp64/bin/php/php7.2.4/php.ini",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/understrap-ntzv.sublime-project",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/page-templates/empty.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/loop-templates/content-single.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/podbor.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/page-templates/fullwidthpage.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/dbpage.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/functions.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/res2var.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/tol.js",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/templates/harakter.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/page.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/profile-form.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/tol.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/nali.js",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/users.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/selgroup.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/dbconfig.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/dbpage.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/header.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/podbor.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/harakter.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/page-2030.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/1/0/domains/intzv.ru/wp-content/themes/semicolon/ols.js",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/tol.js",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/podbor.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/tol.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/ols.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/ols.js",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/page-2030.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/selgroup.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/res2var.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/res2taba.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/res2tab.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/res2rad.php",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/js/semicolon.js",
+		"/C/Users/gdi/AppData/Local/Temp/_tcx/0/0/domains/intzv.ru/wp-content/themes/semicolon/res2sel.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/sass/theme/_child_theme.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/harakter.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/certs1.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/chars1.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/ols.php",
+		"/C/wamp64/www/intzv/wp-content/uploads/so-css/so-css-semicolon.css",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/functions.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/wedocs/single-docs.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/functions.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/inc/breadcrumbs.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/sass/child-theme.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/breadcrumbs.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/inc/template-tags.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/archive-product.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/global-templates/search-filter.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/admin/class-ntz-products-admin.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/loop-templates/content-search.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/search.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/loop-templates/content-none.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/wedocs/docs-sidebar.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/loop-templates/content-product.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/archive-attachment.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/content-product.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/footer.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/content-attached.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/content-products.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/global-templates/attachment-filter.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/taxonomy-type.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/loop-templates/downloads-attachment.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/gulpfile.js",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/src/sass/bootstrap4/bootstrap.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/src/js/bootstrap4/bootstrap.js",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/src/js/custom-javascript.js",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/gulpconfig.json",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/src/sass/bootstrap4/_nav.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/package.json",
+		"/C/Users/gdi/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/src/sass/understrap/theme/_theme.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/src/sass/understrap/understrap/understrap.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/wedocs/shortcode.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/src/sass/fontawesome/_variables.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/css/child-theme.css",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/sass/assets/bootstrap4.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/sass/assets/font-awesome.scss",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/global-templates/left-sidebar-check.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/sidebar-templates/sidebar-left.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/wedocs/templates/single-docs.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/wedocs/templates/docs-sidebar.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/global-templates/search-form.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/wedocs/templates/shortcode.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/public/class-ntz-products-public.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/includes/class-ntz-products.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/loop-templates/content-attachment.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/loop-templates/content-search.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/includes/class-ntz-products-activator.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/includes/class-ntz-products-loader.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/ntz-products.php",
+		"/C/wamp64/www/intzv/wp-admin/options-permalink.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/includes/class-ntz-products-i18n.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/includes/class-ntz-products-deactivator.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/uninstall.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/includes/index.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/sidebar-templates/sidebar-statichero.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/global-templates/right-sidebar-check.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/page-templates/right-sidebarpage.php",
+		"/C/wamp64/www/intzv/wp-content/themes/understrap/inc/extras.php",
+		"/C/Users/gdi/AppData/Roaming/Sublime Text 3/Packages/PHP Completions Kit/README.md",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/content.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/index.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/theme-my-login.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/content-page.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/content-attached.php",
+		"/C/wamp64/www/intzv/wp-content/themes/semicolon/content-single.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/ntz-products/templates/archive-product.php",
+		"/C/wamp64/www/intzv/wp-content/themes/UnderStrap-ntzv-1/single-product.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/woocommerce/includes/class-wc-post-data.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/woocommerce/includes/class-wc-post-types.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/woocommerce/woocommerce.php",
+		"/C/wamp64/www/intzv/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-post-types.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"C:\\wamp64\\www\\intzv\\wp-content\\themes\\semicolon",
+			"C:\\wamp64\\www\\intzv\\wp-content\\themes\\UnderStrap-ntzv-1"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/wp-content/themes/semicolon",
+			"mysqli_error()",
+			"mysql_",
+			"sesid",
+			"zend_extension",
+			"res2sel",
+			"data16",
+			"sec_term_id_sec_term_1",
+			" || tiptabl == 'ТШЛ'",
+			"tiptabl == 'ТОЛ'",
+			" || types == 3",
+			" || types == 3 || types == 20",
+			" || types == 3 || types == 4",
+			" || types == 3",
+			"tol",
+			"nom_napr",
+			"search",
+			".js",
+			" style=\".*?\"",
+			"term_tax_crumbs",
+			"semicolon_breadcrumbs",
+			"h",
+			"h4",
+			"nav-item",
+			".page_item"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/intzv/wp-content/themes/UnderStrap-ntzv-1/conf",
+			"mysqli_error($connection)",
+			"mysqli_",
+			" || tiptabl == 'ТШЛ' || tiptabl == 'ТШП'",
+			" || types == 3 || types == 20",
+			" || types == 3",
+			"",
+			"first_name"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "conf/js/harakter.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "conf/tol.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								792,
+								792
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "conf/js/tol.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 61968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3179,
+								3179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1301.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "conf/harakter.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2971,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1719,
+								1706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "conf/res2sel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\wamp64\\www\\intzv\\wp-content\\themes\\UnderStrap-ntzv-1\\conf",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\wamp64\\www\\intzv\\wp-content\\themes\\UnderStrap-ntzv-1\\conf",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\wamp64\\www\\intzv\\wp-content\\themes\\UnderStrap-ntzv-1\\conf",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\wamp64\\www\\intzv\\wp-content\\themes\\UnderStrap-ntzv-1\\conf",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 103.0
+	},
+	"pinned_build_system": "",
+	"project": "understrap-ntzv.sublime-project",
+	"replace":
+	{
+		"height": 71.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"13":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"14":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"19":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"20":
+				{
+					"group": 0,
+					"index": 5
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

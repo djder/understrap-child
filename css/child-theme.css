@@ -5108,7 +5108,7 @@ input[type="button"].btn-block {
   .accordion > .card .card-header {
     margin-bottom: -1px; }
 
-.breadcrumb {
+.breadcrumb, #breadcrumbs > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6542,7 +6542,7 @@ button.bg-dark:focus {
 .border-right {
   border-right: 1px solid #dee2e6 !important; }
 
-.border-bottom {
+.border-bottom, #wrapper-navbar {
   border-bottom: 1px solid #dee2e6 !important; }
 
 .border-left {
@@ -6650,7 +6650,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex {
+.d-flex, .site {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important; }
@@ -6820,7 +6820,7 @@ button.bg-dark:focus {
       -ms-flex-direction: row !important;
           flex-direction: row !important; }
 
-.flex-column {
+.flex-column, .site {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -7608,7 +7608,7 @@ button.bg-dark:focus {
 .h-75 {
   height: 75% !important; }
 
-.h-100 {
+.h-100, html, body, .site {
   height: 100% !important; }
 
 .h-auto {
@@ -7969,7 +7969,7 @@ button.bg-dark:focus {
 .m-auto {
   margin: auto !important; }
 
-.mt-auto,
+.mt-auto, #wrapper-footer-full,
 .my-auto {
   margin-top: auto !important; }
 
@@ -11686,7 +11686,8 @@ figure.woocommerce-product-gallery__wrapper {
   font-size: 1.25rem; }
 
 .avatar {
-  margin: 0 0.2em; }
+  margin: 0 0.2em;
+  border-radius: 50%; }
 
 .attachment-icon {
   max-width: 24px; }
@@ -11701,14 +11702,6 @@ figure.woocommerce-product-gallery__wrapper {
 article {
   counter-reset: footnotes;
   /* создать счётчик */ }
-
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em; }
-
-sub {
-  top: 0.4em; }
 
 [id^="ref"] {
   counter-increment: footnotes;

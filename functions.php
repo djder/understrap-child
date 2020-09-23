@@ -3,6 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+locate_template( 'inc/breadcrumbs.php' , true, true );
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );
@@ -65,6 +67,6 @@ function remove_widget_title( $title, $instance, $id_base ) {
 
 remove_all_filters( 'get_the_excerpt' );
 add_filter( 'get_the_excerpt', 'change_excerpt_more', 10, 1 );
-function change_excerpt_more($more) {
+function change_excerpt_more( $more ) {
 	return $more .= '...';
 }

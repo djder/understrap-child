@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                         <div class="wedocs-single-wrap">
                             <div class="wedocs-single-content">
-                                <?php wedocs_breadcrumbs(); ?>
+                                <?php //wedocs_breadcrumbs(); ?>
                             </div>
                         </div>   
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">

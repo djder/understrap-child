@@ -7,7 +7,7 @@
 // Get avalable post types
 $post_types = get_post_types( array( 'exclude_from_search' => false ), 'objects' );
 
-unset($post_types['attachment']); // исключить тип записей "вложения"
+//unset($post_types['attachment']); // исключить тип записей "вложения"
 unset($post_types['page']); // исключить тип записей "страницы"
 
 $post_types = array_reverse($post_types, true); 
