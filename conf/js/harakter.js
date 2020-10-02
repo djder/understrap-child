@@ -1,5 +1,90 @@
 $ = window.jQuery;
+confUrl = "/intzv/wp-content/themes/UnderStrap-ntzv-1/conf/";
+templateUrl = confUrl;
+ajaxUrl = confUrl;
+ajaxSearchUrl = ajaxUrl + "search.php";
+jsUrl = confUrl + "js/";
 
+product = {
+	caption: '',
+	complInfo: [],
+	reset() {
+		this.caption = '';
+		complInfo = [];
+	},
+	getFullCaption() {
+		complCaption = '';
+
+		complInfo.forEach(function (item, index) {
+			complCaption += ' (' + item + ')';
+			}
+		);
+
+		return this.caption + complCaption;
+	},
+	// Получение значения параметра из элемента
+	getParamValue(id) {
+		if (id == null || id == '')  { return };
+
+		element = $('#' + id);
+		
+		if (element == null) { return };
+
+		// определение типа элемента
+		switch( element.prop('nodeName') ) {
+			case 'SELECT':
+				value = element.prop('selectedIndex') > 0 ? $('#' + id + ' option:selected').text() : '';
+				break;
+			case 'DIV':	
+				value = $('#' + id + ' input:checked').text();
+				break;
+			case 'INPUT':	
+				value = $('#' + id).text();
+				break;
+			default: value = '';
+		}
+		return value;
+	},
+	// Добавление строки в наименование
+	addStr(value, before = '', after = '') {
+		if (value == null || value == '')  { return };
+
+		this.caption += before + value + after;
+	},
+	// Добавление строки в дополнительное обозначение
+	addInfoStr(value, before = '', after = '') {
+		if (value == null || value == '')  { return };
+
+		this.complInfo.push(before + value + after);
+	},
+
+	// Добавление параметра выбранного элемента в наименование
+	addParam(id, before = '', after = '') {
+		if ( id == null || id == '' )  { return };
+
+		this.addStr( this.getParamValue(id), before, after );
+	},
+
+	// Добавление параметра выбранного элемента в дополнительное обозначение
+	addInfoParam(id, before = '', after = '') {
+		if (id == null || id == '')  { return };
+
+		this.addInfoStr( this.getParamValue(id), before, after);
+	}
+}
+
+$(function() {
+	// Установка параметров ajax запросов по умолчанию
+	$.ajaxSetup({
+		async: false,
+		dataType: "html"
+	});
+
+	product.resetCaption;
+});
+
+// Обработка изменения значения типа трансформатора
+//
 $('#tip').change(function() {
 	tiptabl = this.options[this.selectedIndex].text;
 	tipn = this.options[this.selectedIndex].value;
